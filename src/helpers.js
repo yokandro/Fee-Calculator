@@ -1,5 +1,8 @@
 import dayjs from 'dayjs';
 
+// Set week start to Monday
+dayjs.Ls.en.weekStart = 1;
+
 export const areDatesInSameWeek = (date1String, date2String) => {
   const date1 = dayjs(date1String);
   const date2 = dayjs(date2String);
